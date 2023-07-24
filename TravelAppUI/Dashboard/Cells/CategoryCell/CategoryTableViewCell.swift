@@ -7,12 +7,18 @@
 
 import UIKit
 
+protocol DataChangeByCustomSegmentProtocol {
+    func changeSegment(currentIndex: Int)
+}
+
 class CategoryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var roomView: ParallelogramView!
     @IBOutlet weak var rateView: LeftParallelogramView!
     
     static let reuseIdentifier: String = String(describing: CategoryTableViewCell.self)
+    
+    var delegate: DataChangeByCustomSegmentProtocol?
 
     static var nib: UINib {
         return UINib(nibName: String(describing: self), bundle: nil)
@@ -20,7 +26,12 @@ class CategoryTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        roomView.isUserInteractionEnabled = true
+        rateView.isUserInteractionEnabled = true
+    }
+    
+    fileprivate func segmentChange() {
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

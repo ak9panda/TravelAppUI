@@ -63,13 +63,18 @@ extension DashboardViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        switch indexPath.section {
-//        case 0: return 260
-//        case 1: return 150
-//        case 2: return 200
-//        default: return 0
-//        }
         return tableView.estimatedRowHeight
+    }
+}
+
+// MARK: - SEGMENT DATA CHANGE FROM CATEGORY CELL
+extension DashboardViewController: DataChangeByCustomSegmentProtocol {
+    func changeSegment(currentIndex: Int) {
+        switch currentIndex {
+        case 0: break
+        case 1: break
+        default: break
+        }
     }
 }
 
