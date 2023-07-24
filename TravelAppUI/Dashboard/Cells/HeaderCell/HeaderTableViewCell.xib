@@ -68,7 +68,7 @@ RnVyYW1hIBBSaXZlcmZyb250LCAgICAgICAgIFNpbmdhcG9yZQ
                         </collectionViewFlowLayout>
                     </collectionView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yka-Sc-Hwc" customClass="LeftParallelogramView" customModule="TravelAppUI" customModuleProvider="target">
-                        <rect key="frame" x="195" y="255" width="120" height="40"/>
+                        <rect key="frame" x="195" y="260" width="120" height="40"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See All 2/68" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKT-9N-Ftm">
                                 <rect key="frame" x="15" y="0.0" width="105" height="40"/>
@@ -96,10 +96,11 @@ RnVyYW1hIBBSaXZlcmZyb250LCAgICAgICAgIFNpbmdhcG9yZQ
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="oP8-EC-noz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="1HK-tF-dEw"/>
                     <constraint firstAttribute="trailing" secondItem="oP8-EC-noz" secondAttribute="trailing" constant="18" id="B9u-PD-fAj"/>
-                    <constraint firstAttribute="bottom" secondItem="Yka-Sc-Hwc" secondAttribute="bottom" constant="5" id="EA8-mf-QGB"/>
+                    <constraint firstAttribute="bottom" secondItem="Yka-Sc-Hwc" secondAttribute="bottom" id="EA8-mf-QGB"/>
                     <constraint firstItem="zcH-Qn-L5G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ksz-TG-cOv"/>
                     <constraint firstAttribute="trailing" secondItem="zcH-Qn-L5G" secondAttribute="trailing" id="T8h-1X-F7z"/>
                     <constraint firstItem="oP8-EC-noz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Zq5-Vk-SYY"/>

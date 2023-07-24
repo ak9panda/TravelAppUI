@@ -37,10 +37,10 @@ extension HeaderTableViewCell: UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: AdBannerCollectionViewCell.reuseIdentifier, for: indexPath) as? AdBannerCollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AdBannerCollectionViewCell.reuseIdentifier, for: indexPath) as? AdBannerCollectionViewCell else {
             return UICollectionViewCell()
         }
-        let image = ["beach1", "beach2", "beach3", "beach4", "beach5"].randomElement()
+        let image = ["beach1.jpg", "beach2.jpg", "beach3.jpg", "beach4.jpg", "beach5.jpg"].randomElement()
         cell.imgAdPoster.image = UIImage(named: image ?? "")
         return cell
     }
